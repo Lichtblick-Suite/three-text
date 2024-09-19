@@ -100,7 +100,7 @@ export class FontManager extends EventDispatcher<{ atlasChange: object }> {
     for (const char of this.alphabet) {
       if (charInfo[char] != undefined) {
         throw new Error(
-          `Duplicate character in alphabet: ${char} (${char.codePointAt(0) ?? "undefined"})`,
+          `Duplicate character in alphabet: ${char} (${char.codePointAt(0)?.toString() ?? "undefined"})`,
         );
       }
       const sdf = tinysdf.draw(char);
@@ -110,7 +110,9 @@ export class FontManager extends EventDispatcher<{ atlasChange: object }> {
         rowHeight = 0;
       }
       if (y + sdf.height >= atlasHeight) {
-        throw new Error(`Unable to fit all ${this.alphabet.length} characters in font atlas`);
+        throw new Error(
+          `Unable to fit all ${this.alphabet.length.toString()} characters in font atlas`,
+        );
       }
       rowHeight = Math.max(rowHeight, sdf.height);
       lineHeight = Math.max(lineHeight, rowHeight);
