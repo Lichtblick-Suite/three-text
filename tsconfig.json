@@ -9,7 +9,7 @@
     // DOM and JSX settings should only apply to *.stories.*, but VS Code doesn't allow using a
     // different tsconfig for different files in the project.
     // https://github.com/microsoft/vscode/issues/12463
-    "lib": ["DOM", "es2020"],
+    "lib": ["DOM", "es2021"],
     "jsx": "react-jsx"
   }
 }

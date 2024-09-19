@@ -329,7 +329,7 @@ export class Label extends THREE.Object3D {
     this.material.depthWrite = !transparent;
   }
 
-  // eslint-disable-next-line @foxglove/no-boolean-parameters
+  // eslint-disable-next-line @lichtblick/no-boolean-parameters
   setBillboard(billboard: boolean): void {
     this.material.uniforms.uBillboard!.value = billboard;
     this.pickingMaterial.uniforms.uBillboard!.value = billboard;
@@ -339,7 +339,7 @@ export class Label extends THREE.Object3D {
    * Enable or disable size attenuation. Setting this to `false` also requires that billboarding is
    * enabled.
    */
-  // eslint-disable-next-line @foxglove/no-boolean-parameters
+  // eslint-disable-next-line @lichtblick/no-boolean-parameters
   setSizeAttenuation(sizeAttenuation: boolean): void {
     this.material.uniforms.uSizeAttenuation!.value = sizeAttenuation;
     this.pickingMaterial.uniforms.uSizeAttenuation!.value = sizeAttenuation;
