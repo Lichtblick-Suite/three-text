@@ -34,8 +34,8 @@
     "three": ">=0.140.2"
   },
   "devDependencies": {
-    "@foxglove/tsconfig": "2.0.0",
     "@lichtblick/eslint-plugin": "1.0.1",
+    "@lichtblick/tsconfig": "1.0.0",
     "@storybook/addon-essentials": "7.6.16",
     "@storybook/react": "7.6.16",
     "@storybook/react-webpack5": "7.6.16",

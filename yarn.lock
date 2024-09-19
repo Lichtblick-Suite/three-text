@@ -1815,13 +1815,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@foxglove/tsconfig@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@foxglove/tsconfig@npm:2.0.0"
-  checksum: fccd3d2a67b85cc4532653930f6e0c311628458b489ee2e1e0aa0aa60d11b57bc2567b65344ff4007e238f42037eff22ec83f41d948e3be1a1d856ef207ac3d8
-  languageName: node
-  linkType: hard
-
 "@humanwhocodes/config-array@npm:^0.11.13":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -2193,8 +2186,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@lichtblick/three-text@workspace:."
   dependencies:
-    "@foxglove/tsconfig": "npm:2.0.0"
     "@lichtblick/eslint-plugin": "npm:1.0.1"
+    "@lichtblick/tsconfig": "npm:1.0.0"
     "@mapbox/tiny-sdf": "npm:2.0.6"
     "@storybook/addon-essentials": "npm:7.6.16"
     "@storybook/react": "npm:7.6.16"
@@ -2229,6 +2222,13 @@ __metadata:
     three: ">=0.140.2"
   languageName: unknown
   linkType: soft
+
+"@lichtblick/tsconfig@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@lichtblick/tsconfig@npm:1.0.0"
+  checksum: c4b6764a46b1f0e782f71ebc1733f306209acd5a047ff817806a4aa0919829b79e20368fb9e336e76d615bce94be3eae0c87480246b25f5f86b2d3b9eb1d4a54
+  languageName: node
+  linkType: hard
 
 "@mapbox/tiny-sdf@npm:2.0.6":
   version: 2.0.6
