@@ -35,7 +35,7 @@ jobs:
       - run: yarn pack
       - name: Publish to NPM (dry run)
         # `yarn publish` does not support --provenance
-        run: npm publish lichtblick-crc-*.tgz --provenance --access public --dry-run
+        run: npm publish package-*.tgz --provenance --access public --dry-run
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: Publish to NPM
