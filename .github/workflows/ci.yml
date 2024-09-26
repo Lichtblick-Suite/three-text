@@ -33,6 +33,7 @@ jobs:
       - run: yarn run test
 
       - run: yarn pack
+      - run: ls -al
       - name: Publish to NPM (dry run)
         # `yarn publish` does not support --provenance
         run: npm publish package-*.tgz --provenance --access public --dry-run
